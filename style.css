@@ -1,52 +1,41 @@
 body {
-  background-image: url("");
+  background-image: url(""); /* Add your background image URL here */
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1 {
-  color: rgb(25, 27, 26);
-  text-align: center;
-  font-size: 70px;
-  margin: 10px 0;
-}
-.container {
-  display: grid;
-  place-items: center;
-  height: 50vh;
-}
-.stitch {
-  width: 350px;
-  height: 350px;
-}
-
 .header {
   overflow: hidden;
   background-color: rgb(2, 121, 239);
-  padding: 10px 0;
+  padding: 5px 0; /* Adjusted for consistency */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between logo and nav */
 }
 
 .header img {
-  height: 50px;
-  width: 50px;
+  height: 50px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between logo and navigation */
+}
+
+.header-Left a.logo {
+  font-size: 24px;
+  color: white;
 }
 
 .header a {
-  float: left;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 10px 15px; /* Navigation link padding */
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
   font-weight: bold;
-}
-
-.header a.logo {
-  font-size: 25px;
+  margin-right: 10px; /* Space between links */
 }
 
 .header a:hover {
@@ -60,7 +49,7 @@ h1 {
 }
 
 .header-Right {
-  float: right;
+  margin-left: auto; /* Push nav to the right */
 }
 
 .footer {
@@ -69,14 +58,69 @@ h1 {
   bottom: 0;
   width: 100%;
   background-color: #1230AE;
-  color: #f2f8f8;
+  color: #f4f8f8;
   text-align: center;
   padding: 10px 0;
 }
 
-#content {
-  color: maroon;
-  text-align: justify;
-  font-size: 25px;
-  margin: 20px;
+/* Best Sellers Section */
+.best-sellers {
+  padding: 40px; /* Space around the section */
+  background-color: white; /* Background for visibility */
+  text-align: center; /* Center text */
+}
+
+.best-sellers h1 {
+  font-size: 36px; /* Title size */
+  margin-bottom: 20px; /* Space below title */
+  color: #333; /* Title color */
+}
+
+.cars-grid {
+  display: grid; /* Grid layout for cars */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between cards */
+}
+
+.car-card {
+  padding: 15px; /* Space within cards */
+  background-color: #f9f9f9; /* Card background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 5%; /* Rounded corners */
+  text-align: center; /* Centered text */
+}
+
+.car-card img {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded image corners */
+}
+
+.car-card h3 {
+  font-size: 24px; /* Subtitle size */
+  margin-bottom: 10px; /* Space below subtitle */
+}
+
+.car-card p {
+  font-size: 16px; /* Text size */
+  color: #555; /* Text color */
+  text-align: justify; /* Justified text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cars-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .cars-grid {
+      grid-template-columns: 1fr; /* One column on mobile */
+  }
+
+  .header a {
+      font-size: 16px; /* Smaller text for mobile */
+      padding: 8px 10px; /* Smaller padding for mobile */
+  }
 }
