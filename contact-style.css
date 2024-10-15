@@ -19,11 +19,18 @@ body {
   height: 50px; /* Adjust height as needed */
   width: auto; /* Maintain aspect ratio */
   margin-right: 20px; /* Space between logo and navigation */
+  transition: none; /* Disable transitions on the logo image */
 }
 
 .header-Left a.logo {
   font-size: 24px;
   color: white;
+  transition: none; /* Disable transition */
+}
+
+.header-Left a.logo:hover {
+  background-color: transparent; /* Prevent any background change */
+  color: white; /* Maintain text color */
 }
 
 .header a {

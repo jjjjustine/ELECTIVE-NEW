@@ -58,15 +58,25 @@ h1 {
     font-size: 70px; /* Title size */
     margin: 20px 0; /* Margin around title */
 }
-
-h2 {
-    color: rgb(18, 19, 18);
-    text-align: justify; /* Justified text */
-    font-size: 20px; /* Font size for body text */
-    margin: 10px 0; /* Margin around body text */
-    padding: 2rem; /* Padding for readability */
+.text-center {
+    text-align: justify; /* Justify text for a cleaner look */
+    margin: 0 auto; /* Center the div itself if needed */
+    padding: 20px; /* Add some padding for spacing */
+    max-width: 1500px; /* Limit the width for better readability */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    line-height: 1.6; /* Increase line height for better readability */
+    font-size: 18px; /* Slightly larger font size for clarity */
+    color: #333; /* Darker text color for better contrast */
+    font-family: 'Arial', sans-serif; /* Professional font choice */
 }
 
+h2 {
+    color: rgb(2, 121, 239); /* Consistent color for headings */
+    margin-top: 1.5rem; /* Space above headings */
+    margin-bottom: 0.5rem; /* Space below headings */
+}
 .footer {
     position: fixed;
     left: 0;
