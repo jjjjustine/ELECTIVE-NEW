@@ -1,5 +1,5 @@
 body {
-  background-image: url(""); /* Add your background image URL here */
+  background-image: url(""); 
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -9,16 +9,16 @@ body {
 .header {
   overflow: hidden;
   background-color: rgb(2, 121, 239);
-  padding: 5px 0; /* Adjusted for consistency */
-  display: flex; /* Flexbox for layout */
-  align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Space between logo and nav */
+  padding: 5px 0; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
 }
 
 .header img {
-  height: 50px; /* Adjust height as needed */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Space between logo and navigation */
+  height: 50px; 
+  width: auto; 
+  margin-right: 20px;
 }
 
 .header-Left a.logo {
@@ -29,13 +29,13 @@ body {
 .header a {
   color: white;
   text-align: center;
-  padding: 10px 15px; /* Navigation link padding */
+  padding: 10px 15px; 
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
   font-weight: bold;
-  margin-right: 10px; /* Space between links */
+  margin-right: 10px; 
 }
 
 .header a:hover {
@@ -49,7 +49,7 @@ body {
 }
 
 .header-Right {
-  margin-left: auto; /* Push nav to the right */
+  margin-left: auto; 
 }
 
 .footer {
@@ -66,13 +66,13 @@ body {
 /* Best Sellers Section */
 .best-sellers {
   padding: 40px; /* Space around the section */
-  background-color: white; /* Background for visibility */
+  background-color: white;
   text-align: center; /* Center text */
 }
 
 .best-sellers h1 {
   font-size: 36px; /* Title size */
-  margin-bottom: 20px; /* Space below title */
+  margin-bottom: 20px; 
   color: #333; /* Title color */
 }
 
