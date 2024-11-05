@@ -107,6 +107,23 @@ body {
   text-align: justify; /* Justified text */
 }
 
+.pictures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Space between images */
+    margin-top: 20px; /* Space above pictures section */
+}
+
+.text-center {
+    text-align: center; /* Center align text */
+}
+
+.rounded {
+    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .cars-grid {
