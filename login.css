@@ -47,7 +47,7 @@ label {
     text-align: left;
     color: #24292e;
     margin-bottom: 5px;
-    font-weight: normal; /* Remove bold from labels */
+    font-weight: normal; 
 }
 
 input[type="text"],

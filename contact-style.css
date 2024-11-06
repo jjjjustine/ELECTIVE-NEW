@@ -1,64 +1,71 @@
 body {
-  background-image: url(""); /* Add your background image URL here */
+  background-image: url(""); 
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif; /* Clean, modern font */
 }
 
 .header {
-  overflow: hidden;
-  background-color: rgb(2, 121, 239);
-  padding: 5px 0; /* Consistent padding */
-  display: flex; /* Flexbox for layout */
-  align-items: center; /* Center items vertically */
-  justify-content: space-between;
+  background-color: #0279ef; /* Professional blue */
+    padding: 1px 0; /* Increased padding for better space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header img {
-  height: 50px; /* Adjust height as needed */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Space between logo and navigation */
-  transition: none; /* Disable transitions on the logo image */
+  height: 60px; /* Slightly larger logo */
+  width: auto;
+  margin-left: 20px; /* Adjust left margin */
 }
 
 .header-Left a.logo {
-  font-size: 24px;
+  font-size: 30px; /* Larger, bolder text for logo */
   color: white;
-  transition: none; /* Disable transition */
-}
-
-.header-Left a.logo:hover {
-  background-color: transparent; /* Prevent any background change */
-  color: white; /* Maintain text color */
-}
-
-.header a {
-  color: white;
-  text-align: center;
-  padding: 10px 15px; /* Navigation link padding */
+  font-weight: 600; /* Stronger weight for the logo */
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-  font-weight: bold;
-  margin-right: 10px; /* Space between links */
-}
-
-.header a:hover {
-  background-color: #000000;
-  color: white;
-}
-
-.header a.active {
-  background-color: #117554;
-  color: white;
 }
 
 .header-Right {
-  margin-left: auto; /* Push nav to the right */
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
+.header-Right a {
+  color: white;
+  padding: 12px 20px; 
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+  border-radius: 25px; /* Rounded corners for links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.header-Right a:hover {
+  background-color: #025f9c; /* Darker shade for hover */
+  color: white;
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.header-Right a.active {
+  background-color: #117554; /* Active link color */
+  color: white;
+}
+
+.footer {
+  position: fixed; /* Fixes the footer to the bottom of the page */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1230AE; /* Deep blue background color */
+    color: #f4f8f8; /* Light text color for contrast */
+    text-align: center;
+    padding: 12px 0; /* Padding for better spacing */
+    font-size: 14px; /* Slightly smaller font size */
+}
 h1 {
   color: rgb(25, 27, 26);
   text-align: center;

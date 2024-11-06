@@ -1,82 +1,138 @@
 body {
-    background-image: url("TESTIMONIALS/background.jpg"); /* Add your background image URL here */
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.header {
-    overflow: hidden;
-    background-color: rgb(2, 121, 239);
-    padding: 5px 0; /* Consistent padding */
-    display: flex; /* Flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between logo and nav */
-}
-
-.header img {
-    height: 50px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between logo and navigation */
-}
-
-.header a {
+    background-image: url(""); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; /* Clean, modern font */
+  }
+  
+  .header {
+    background-color: #0279ef; /* Professional blue */
+    padding: 1px 0; /* Increased padding for better space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header img {
+    height: 60px; /* Slightly larger logo */
+    width: auto;
+    margin-left: 20px; /* Adjust left margin */
+  }
+  
+  .header-Left a.logo {
+    font-size: 30px; /* Larger, bolder text for logo */
     color: white;
-    text-align: center;
-    padding: 10px 15px; /* Navigation link padding */
+    font-weight: 600; /* Stronger weight for the logo */
+    text-decoration: none;
+  }
+  
+  .header-Right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .header-Right a {
+    color: white;
+    padding: 12px 20px; 
     text-decoration: none;
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    font-weight: bold;
-    margin-right: 10px; /* Space between links */
-}
-
-.header a:hover {
-    background-color: #000000;
+    font-weight: 500;
+    margin-right: 15px;
+    border-radius: 25px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  .header-Right a:hover {
+    background-color: #025f9c; /* Darker shade for hover */
+    color: #fff;
+  }
+  
+  .header-Right a.active {
+    background-color: #117554; /* Active link color */
     color: white;
-}
-
-.header a.active {
-    background-color: #117554;
-    color: white;
-}
-
-.section {
-    padding: 60px 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
-    text-align: center;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-h2 {
-    color: rgb(2, 121, 239); /* Consistent color for headings */
-    margin-top: 1.5rem; /* Space above headings */
-    margin-bottom: 0.5rem; /* Space below headings */
-}
-
-.testimonial-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.testimonial-item {
-    background-color: #ffffff;
-    border: 1px solid #d1d1d1;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-.footer {
-    position: fixed;
+  }
+  
+  .footer {
+    position: fixed; /* Fixes the footer to the bottom of the page */
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #1230AE;
-    color: #f4f
-}
+    background-color: #1230AE; /* Deep blue background color */
+    color: #f4f8f8; /* Light text color for contrast */
+    text-align: center;
+    padding: 12px 0; /* Padding for better spacing */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+  
+  .section {
+    padding: 60px 20px; /* Larger padding for more space */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    font-size: 40px; /* Larger title */
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700; /* Bold title */
+  }
+  
+  .testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; /* Increased gap for a more spacious layout */
+    margin-top: 20px;
+  }
+  
+  .testimonial-item {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger shadow for cards */
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .testimonial-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .testimonial-item p {
+    font-size: 16px; /* Larger text for readability */
+    color: #777;
+    text-align: justify;
+    line-height: 1.6; /* Increased line height for better readability */
+  }
+  
+  .testimonial-item strong {
+    font-size: 18px;
+    color: #0279ef; /* Color for the name of the person */
+  }
+
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .header-Right a {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  
+    .testimonial-list {
+      grid-template-columns: 1fr 1fr; /* Adjust layout for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-Right a {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .testimonial-list {
+      grid-template-columns: 1fr; /* Stack testimonials on smaller screens */
+    }
+  }
+  

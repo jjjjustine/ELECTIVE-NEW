@@ -3,167 +3,130 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.header {
-    overflow: hidden;
-    background-color: rgb(2, 121, 239);
-    padding: 5px 0; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-}
-
-.header img {
-    height: 50px; 
-    width: auto; 
-    margin-right: 20px;
-}
-
-.header-right a {
+    font-family: Arial, Helvetica, sans-serif; /* Clean, modern font */
+  }
+  
+  .header {
+    background-color: #0279ef; /* Professional blue */
+    padding: 1px 0; /* Increased padding for better space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header img {
+    height: 60px; /* Slightly larger logo */
+    width: auto;
+    margin-left: 20px; /* Adjust left margin */
+  }
+  .header-right a {
     color: white;
-    text-align: center;
-    padding: 10px 15px; 
-    text-decoration: none; /* No underline */
+    padding: 12px 20px; 
+    text-decoration: none;
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    font-weight: bold;
-    margin-right: 10px; 
-}
+    font-weight: 500;
+    margin-right: 15px;
+    border-radius: 25px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
 
+/* Remove underline on hover */
 .header-right a:hover {
-    background-color: #000000; /* Hover background color */
-    color: white;
-    text-decoration: none; /* No underline on hover */
+  background-color: #025f9c; /* Darker shade for hover */
+  color: white;
+  text-decoration: none; /* Ensure no underline on hover */
 }
 
+/* Active link styling */
 .header-right a.active {
-    background-color: #117554; /* Active link background color */
-    color: white;
+  background-color: #117554; /* Active link color */
+  color: white;
 }
-
-.footer {
-    position: fixed;
+  .footer {
+    position: fixed; /* Fixes the footer to the bottom of the page */
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #1230AE;
-    color: #f4f8f8;
+    background-color: #1230AE; /* Deep blue background color */
+    color: #f4f8f8; /* Light text color for contrast */
     text-align: center;
-    padding: 10px 0;
-}
+    padding: 12px 0; /* Padding for better spacing */
+    font-size: 14px; /* Slightly smaller font size */
+  }
 
-/* Icons Section */
-.icons-section {
+  
+  .icons-section {
     padding: 60px 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    background-color: rgba(255, 255, 255, 0.9); 
     text-align: center;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.icons-section h4 {
-    color: rgb(14, 15, 16); /* Consistent color for headings */
-    margin-bottom: 1.5rem; /* Space below the heading */
-}
-
-.logo-small {
-    font-size: 80px; /* Increased icon size */
-    display: block; /* Center icons */
-    margin: 0 auto 15px auto; /* Center and add space below */
-}
-
-/* Best Sellers Section */
-.best-sellers {
-    padding: 40px; /* Space around the section */
-    background-color: white;
-    text-align: center; /* Center text */
-}
-
-.best-sellers h1 {
-    font-size: 36px; /* Title size */
-    margin-bottom: 20px; 
-    color: #333; /* Title color */
-}
-
-.cars-grid {
-    display: grid; /* Grid layout for cars */
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 20px; /* Space between cards */
-}
-
-.car-card {
-    padding: 15px; /* Space within cards */
-    background-color: #f9f9f9; /* Card background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    border-radius: 5%; /* Rounded corners */
-    text-align: center; /* Centered text */
-}
-
-.car-card img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded image corners */
-}
-
-.car-card h3 {
-    font-size: 24px; /* Subtitle size */
-    margin-bottom: 10px; /* Space below subtitle */
-}
-
-.car-card p {
-    font-size: 16px; /* Text size */
-    color: #555; /* Text color */
-    text-align: justify; /* Justified text */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .cars-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
-    }
-
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icons-section h1 {
+    font-size: 40px; /* Larger, bold title */
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .icons-section p {
+    font-size: 16px;
+    color: #777;
+    text-align: justify;
+    line-height: 1.6; /* Increased line height for readability */
+  }
+  
+  .logo-small {
+    font-size: 80px;
+    display: block;
+    margin: 0 auto 15px;
+  }
+  
+  .logo-small.fa-car {
+    color: #FF5733;
+  }
+  
+  .logo-small.fa-check-circle {
+    color: #FF1493;
+  }
+  
+  .logo-small.fa-exchange {
+    color: #FFD700;
+  }
+  
+  .logo-small.fa-money {
+    color: #32CD32;
+  }
+  
+  .logo-small.fa-shield {
+    color: #4682B4;
+  }
+  
+  .logo-small.fa-wrench {
+    color: #A52A2A;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
     .logo-small {
-        font-size: 60px; /* Adjust icon size for mobile */
+      font-size: 60px; /* Slightly smaller for tablets */
     }
-}
-.logo-small.fa-car {
-    color: #FF5733; /* Color for New Car Sales */
-}
-
-.logo-small.fa-check-circle {
-    color: #FF1493; /* Color for Used Car Sales */
-}
-
-.logo-small.fa-exchange {
-    color: #FFD700; /* Color for Trade-In Services */
-}
-
-.logo-small.fa-money {
-    color: #32CD32; /* Color for Financing Options */
-}
-
-.logo-small.fa-shield {
-    color: #4682B4; /* Color for Warranty Plans */
-}
-
-.logo-small.fa-wrench {
-    color: #A52A2A; /* Color for After-Sales Services */
-}
-
-@media (max-width: 480px) {
-    .cars-grid {
-        grid-template-columns: 1fr; /* One column on mobile */
-    }
-
+  
     .header-right a {
-        font-size: 16px; /* Smaller text for mobile */
-        padding: 8px 10px; /* Smaller padding for mobile */
+      font-size: 16px;
+      padding: 8px 15px;
     }
-
+  }
+  
+  @media (max-width: 480px) {
     .logo-small {
-        font-size: 50px; /* Adjust icon size for mobile */
+      font-size: 50px; /* Smaller for mobile */
     }
-}
+  
+    .header-right a {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  }
+  

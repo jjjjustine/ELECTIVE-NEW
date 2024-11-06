@@ -3,141 +3,118 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif; /* Clean, modern font */
 }
 
 .header {
-  overflow: hidden;
-  background-color: rgb(2, 121, 239);
-  padding: 5px 0; 
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
+  background-color: #0279ef; /* Professional blue */
+    padding: 1px 0; /* Increased padding for better space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header img {
-  height: 50px; 
-  width: auto; 
-  margin-right: 20px;
+  height: 60px; /* Slightly larger logo */
+  width: auto;
+  margin-left: 20px; /* Adjust left margin */
 }
 
 .header-Left a.logo {
-  font-size: 24px;
+  font-size: 30px; /* Larger, bolder text for logo */
   color: white;
-}
-
-.header a {
-  color: white;
-  text-align: center;
-  padding: 10px 15px; 
+  font-weight: 600; /* Stronger weight for the logo */
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-  font-weight: bold;
-  margin-right: 10px; 
-}
-
-.header a:hover {
-  background-color: #000000;
-  color: white;
-}
-
-.header a.active {
-  background-color: #117554;
-  color: white;
 }
 
 .header-Right {
-  margin-left: auto; 
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-Right a {
+  color: white;
+  padding: 12px 20px; 
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+  border-radius: 25px; /* Rounded corners for links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.header-Right a:hover {
+  background-color: #025f9c; /* Darker shade for hover */
+  color: white;
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.header-Right a.active {
+  background-color: #117554; /* Active link color */
+  color: white;
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #1230AE;
-  color: #f4f8f8;
-  text-align: center;
-  padding: 10px 0;
+  position: fixed; /* Fixes the footer to the bottom of the page */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1230AE; /* Deep blue background color */
+    color: #f4f8f8; /* Light text color for contrast */
+    text-align: center;
+    padding: 12px 0; /* Padding for better spacing */
+    font-size: 14px; /* Slightly smaller font size */
 }
 
 /* Best Sellers Section */
 .best-sellers {
-  padding: 40px; /* Space around the section */
-  background-color: white;
-  text-align: center; /* Center text */
+  padding: 60px 20px; /* Larger padding for more space */
+  background-color: #f5f5f5; /* Light background for the section */
+  text-align: center;
 }
 
 .best-sellers h1 {
-  font-size: 36px; /* Title size */
-  margin-bottom: 20px; 
-  color: #333; /* Title color */
+  font-size: 40px; /* Larger title */
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 700; /* Bold title */
 }
 
 .cars-grid {
-  display: grid; /* Grid layout for cars */
-  grid-template-columns: repeat(3, 1fr); /* Three columns */
-  gap: 20px; /* Space between cards */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px; /* Increased gap for a more spacious layout */
 }
 
 .car-card {
-  padding: 15px; /* Space within cards */
-  background-color: #f9f9f9; /* Card background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  border-radius: 5%; /* Rounded corners */
-  text-align: center; /* Centered text */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger shadow for cards */
+  border-radius: 8px; /* Softer card corners */
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.car-card:hover {
+  transform: translateY(-5px); /* Card lift effect */
 }
 
 .car-card img {
-  width: 100%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5px; /* Rounded image corners */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded image corners */
 }
 
 .car-card h3 {
-  font-size: 24px; /* Subtitle size */
-  margin-bottom: 10px; /* Space below subtitle */
+  font-size: 26px; /* Larger subtitle */
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .car-card p {
-  font-size: 16px; /* Text size */
-  color: #555; /* Text color */
-  text-align: justify; /* Justified text */
-}
-
-.pictures-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 15px; /* Space between images */
-    margin-top: 20px; /* Space above pictures section */
-}
-
-.text-center {
-    text-align: center; /* Center align text */
-}
-
-.rounded {
-    border-radius: 10px; /* Rounded corners */
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .cars-grid {
-      grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .cars-grid {
-      grid-template-columns: 1fr; /* One column on mobile */
-  }
-
-  .header a {
-      font-size: 16px; /* Smaller text for mobile */
-      padding: 8px 10px; /* Smaller padding for mobile */
-  }
+  font-size: 16px;
+  color: #777;
+  text-align: justify;
+  line-height: 1.6; /* Increased line height for readability */
 }

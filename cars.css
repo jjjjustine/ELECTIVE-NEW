@@ -1,48 +1,71 @@
 body {
-    background-image: url("CARS/background.jpg"); /* Add your background image URL here */
+    background-image: url(""); 
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.header {
-    overflow: hidden;
-    background-color: rgb(2, 121, 239);
-    padding: 5px 0; /* Consistent padding */
-    display: flex; /* Flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between logo and nav */
-}
-
-.header img {
-    height: 50px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between logo and navigation */
-}
-
-.header a {
+    font-family: Arial, Helvetica, sans-serif; /* Clean, modern font */
+  }
+  
+  .header {
+    background-color: #0279ef; /* Professional blue */
+      padding: 1px 0; /* Increased padding for better space */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .header img {
+    height: 60px; /* Slightly larger logo */
+    width: auto;
+    margin-left: 20px; /* Adjust left margin */
+  }
+  
+  .header-Left a.logo {
+    font-size: 30px; /* Larger, bolder text for logo */
     color: white;
-    text-align: center;
-    padding: 10px 15px; /* Navigation link padding */
+    font-weight: 600; /* Stronger weight for the logo */
+    text-decoration: none;
+  }
+  
+  .header-Right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .header-Right a {
+    color: white;
+    padding: 12px 20px; 
     text-decoration: none;
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    font-weight: bold;
-    margin-right: 10px; /* Space between links */
-}
-
-.header a:hover {
-    background-color: #000000;
+    font-weight: 500;
+    margin-right: 15px;
+    border-radius: 25px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  .header-Right a:hover {
+    background-color: #025f9c; /* Darker shade for hover */
     color: white;
-}
-
-.header a.active {
-    background-color: #117554;
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+  
+  .header-Right a.active {
+    background-color: #117554; /* Active link color */
     color: white;
-}
-
+  }
+  
+  .footer {
+    position: fixed; /* Fixes the footer to the bottom of the page */
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #1230AE; /* Deep blue background color */
+      color: #f4f8f8; /* Light text color for contrast */
+      text-align: center;
+      padding: 12px 0; /* Padding for better spacing */
+      font-size: 14px; /* Slightly smaller font size */
+  }
 .section {
     padding: 60px 20px;
     background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
@@ -52,9 +75,10 @@ body {
 }
 
 h2 {
-    color: rgb(0, 0, 0); /* Consistent color for headings */
-    margin-top: 1.5rem; /* Space above headings */
-    margin-bottom: 0.5rem; /* Space below headings */
+    font-size: 40px; /* Set the font size for the main heading */
+    margin-bottom: 30px; /* Add space below the heading */
+    color: #333; /* Set a dark gray color for the text */
+    font-weight: 700; /* Apply bold weight for emphasis */
 }
 
 .cars-grid {
@@ -74,18 +98,6 @@ h2 {
 .car-card img {
     border-radius: 5px;
     max-width: 100%; /* Responsive images */
-}
-
-/* Footer */
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #1230AE;
-    color: #f4f8f8;
-    text-align: center;
-    padding: 10px 0;
 }
 
 /* Responsive Design */
