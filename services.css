@@ -42,6 +42,19 @@ body {
   background-color: #117554; /* Active link color */
   color: white;
 }
+.logout-btn {
+  background-color: #f44336; /* Red color for logout */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+}
+.logout-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
   .footer {
     position: fixed; /* Fixes the footer to the bottom of the page */
     left: 0;
