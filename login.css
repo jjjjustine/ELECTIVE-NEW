@@ -98,6 +98,33 @@ input[type="password"]:focus {
 .signup-text a:hover {
     text-decoration: underline;
 }
+ 
+ .password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding-right: 35px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.toggle-password:hover {
+    color: #555;
+}
 
 /* Responsive Design */
 @media (max-width: 400px) {
